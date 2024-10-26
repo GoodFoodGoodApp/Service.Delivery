@@ -13,7 +13,7 @@ c.String(http.StatusOK, "Hello World! from root Time : %s", time.Now().Format(ti
 
 func jsonHelloWorld(c *gin.Context) {
  c.JSON(http.StatusOK, gin.H{
-  "message": "Hello World!  Here we are ! Time : " + time.Now().Format(time.RFC3339Nano),
+  "message": "Hello World!  Here we are from now main.go ! Time : " + time.Now().Format(time.RFC3339Nano),
  })
 }
 

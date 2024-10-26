@@ -2,10 +2,15 @@ FROM golang:1.23-alpine
 
 RUN go install github.com/air-verse/air@latest
 
+RUN apk add curl
+
 WORKDIR /app
 
-COPY . /app/
-
+COPY go.mod go.sum ./
 RUN go mod download
 
-# CMD ["air", "-c", ".air.toml"]
+COPY . .
+
+EXPOSE 8080
+
+CMD ["air"]

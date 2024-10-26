@@ -1,10 +1,10 @@
 root = "."
-tmp_dir = "cmd/api/tmp"
+tmp_dir = "tmp"
 
 [build]
-cmd = "go build -o cmd/api/tmp/main ."
-bin = "cmd/api/tmp/main"
-full_bin = "cmd/api/tmp/main"
+cmd = "go build -o ./tmp/main ."
+bin = "tmp/main"
+full_bin = "./tmp/main"
 include_ext = ["go"]
 exclude_dir = ["assets", "tmp", "vendor"]
 include_dir = []
