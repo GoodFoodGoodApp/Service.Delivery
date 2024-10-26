@@ -8,7 +8,7 @@ import (
 )
 
 func helloworld( c *gin.Context){
-c.String(http.StatusOK, "Hello World! from cmd/api Time : %s", time.Now().Format(time.RFC3339Nano))
+c.String(http.StatusOK, "Hello World! from root Time : %s", time.Now().Format(time.RFC3339Nano))
 }
 
 func jsonHelloWorld(c *gin.Context) {

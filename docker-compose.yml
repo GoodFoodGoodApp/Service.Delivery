@@ -1,7 +1,7 @@
 services:
   api:
     build: .
-    command: air
+    command: air -d
     ports:
       - 8081:8080
     volumes:
